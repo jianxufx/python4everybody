@@ -1,7 +1,7 @@
 #
 def myfloor(x):
     # if x a type of x.0
-    # o is a type of x.0
+    # 0 is a type of x.0
     if(float(x)==int(x)):
         return x
     # if x is not a type of x.0
@@ -12,7 +12,7 @@ def myfloor(x):
 
 def myceil(x):
     # if x a type a x.0
-    # o is a type of x.0
+    # 0 is a type of x.0
     if(float(x)==int(x)):
             return x
     # if x is not a type of x.0
