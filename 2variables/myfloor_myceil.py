@@ -21,3 +21,9 @@ def myceil(x):
         return int(x)
     else:
         return 0
+
+print(myceil(0))
+print(myceil(1))
+print(myceil(-1))
+print(myceil(5.6))
+print(myceil(-7.8))
