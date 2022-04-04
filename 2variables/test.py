@@ -1,6 +1,8 @@
-x=5
+import random
 
-if x>6:
-    print('good')
-else:
-    pass
+m=0
+n=1
+
+for i in range(10):
+    a=random.random()
+    print((n-m)*a+m)
