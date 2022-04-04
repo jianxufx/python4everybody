@@ -1,8 +1,6 @@
-x=input()
+x=5
 
-x=int(x)
-
-if x>20:
+if x>6:
     print('good')
 else:
-    print('bad')
+    pass
