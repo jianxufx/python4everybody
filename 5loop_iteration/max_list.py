@@ -22,7 +22,7 @@ def max_list(li):
     for num in li:
         if num>=max:
             max=num
-    #end of the loop
+    #end of the loopa
     return max
 
 print(max_list(li))
