@@ -16,7 +16,7 @@ def max_list(li):
             print('only numbers allowed')
             return None
 
-    #we  think the first item in the list as the max number.
+    #fristly we  think the first item in the list as the max number.
     max=li[0]
 
     for num in li:
