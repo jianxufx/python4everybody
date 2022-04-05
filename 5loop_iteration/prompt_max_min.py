@@ -15,13 +15,13 @@ while True:
     if max==None:
         max=num
     else:
-        if num>max:
+        if num>=max:
             max=num
 
     if min==None:
         min=num
     else:
-        if num<min:
+        if num<=min:
             min=num
 
 print(max,min)
