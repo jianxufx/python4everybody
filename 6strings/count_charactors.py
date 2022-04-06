@@ -2,7 +2,7 @@
 
 
 
-#count how many times a charactor appeard int a string
+#count how many times a charactor appeard in a string
 
 def mycount(str,char):
 
