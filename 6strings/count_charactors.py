@@ -2,7 +2,7 @@
 
 
 
-#count how many times a charactor disappeard int a string
+#count how many times a charactor appeard int a string
 
 def mycount(str,char):
 
