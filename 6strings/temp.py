@@ -1,6 +1,9 @@
-a='abcdefdsfdslfjlsfjlsf\nfdjslfjlsfjlsfjdsfjslfjdlsfjs\nhelolword'
+while True:
+    line=input('>')
+    if  len(line)==0 or line[0]=='#':
+        continue
+    if line=='done':
+        break
+    print(line)
 
-li=list()
-li=a.splitlines()
-
-print(li)
+print('Done!')
