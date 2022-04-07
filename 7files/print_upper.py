@@ -1,4 +1,4 @@
-import os
+
 #prompt
 file=input('please enter a file name:')
 
