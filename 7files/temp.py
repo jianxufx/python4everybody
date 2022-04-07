@@ -1,6 +1,5 @@
 
-filehandle=open('c:\\nihao.txt','w')
-
-line='nihaoa\nbanana'
-filehandle.write(line)
-filehandle.close()
+filehandle=open('c:\\mbox.txt')
+myline=iter(filehandle)
+print(next(myline))
+print(next(myline))
