@@ -1,3 +1,5 @@
+from timeit import default_timer as timer
+
 
 #open file with r mode
 
@@ -8,11 +10,18 @@ except:
     exit()
 
 #read each line through the file
+
+start=timer()
 for line in filehandle:
 
     #clean the \n
     line=line.rstrip()
 
 
-    if  line.startswith('From:'):
-        print(line)
+    if  not line.startswith('From:'):
+        continue
+
+    print(line)
+end=timer()
+
+print(end-start)
