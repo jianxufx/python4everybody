@@ -15,7 +15,7 @@ except:
 for line in filehandle:
 
     #clearn up the \n at the end of each line
-    line=line.strip()
+    line=line.rstrip()
 
     #split each line into a list of words
     templist=line.split()
