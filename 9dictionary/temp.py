@@ -1,2 +1,3 @@
 a=dict()
-a['name']='hanmeimei'
+
+a[]
