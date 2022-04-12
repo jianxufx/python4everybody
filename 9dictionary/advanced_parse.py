@@ -33,11 +33,11 @@ for line in filehandle:
 
 
 #how to arphabet the keys int the dict?
-#cos dict donnot have the sort method
+#because dict donnot have the sort method
 #but list have the sort method
 #we need to build a sorted list
 
-
+'''
 #build the alphabet list
 keys=[]
 
@@ -53,7 +53,9 @@ for name in keys:
 
 
 print('*'*20)
+'''
 
+#*****************************************************************
 
 #how to print the most used word by decrentment
 #we are going to do this like the alphabet list
@@ -61,11 +63,33 @@ print('*'*20)
 #from A:B  to B:A
 
 # can anyone help me ?
-tempdict={}
+#*****************************************************************
 
 
-for key in words.keys():
-    tempdict[words[key]]=key
+# another method to build the alphabet result
+#we use tuple to the pair
+li=[]
+for i,k in words.items():
+    li.append((i,k))
+
+li.sort()
+
+for m,n in li:
+    print(m,n)
 
 
-print(tempdict)
+print('-'*30)
+
+
+
+#print the dict ranked by value
+
+livalue=[]
+
+for i,k in words.items():
+    livalue.append((k,i))
+
+livalue.sort(reverse=True)
+
+for m,n in livalue:
+    print(m,n)
