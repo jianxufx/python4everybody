@@ -40,8 +40,9 @@ for line in filehandle:
 li=[]
 for i,k in words.items():
     #store each item in tuple
-    li.append((i,k))
+    li.append([i,k])
 
+#sort by key
 li.sort()
 
 for m,n in li:
@@ -67,8 +68,9 @@ liitems=[]
 for i,k in words.items():
 
     #store each item in tuple
-    liitems.append((k,i))
+    liitems.append([k,i])
 
+#sort by value
 liitems.sort(reverse=True)
 
 for m,n in liitems:
