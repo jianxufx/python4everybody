@@ -92,4 +92,4 @@ for i,k in words.items():
 livalue.sort(reverse=True)
 
 for m,n in livalue:
-    print(m,n)
+    print(n,m)
