@@ -17,7 +17,7 @@ Enter a file name: mbox-short.txt
 #open the file with r mode
 try:
 
-    filehandle=open('mbox-short.txt')
+    filehandle=open('mbox.txt')
 except:
     print('file not exist!')
     a=input('Press any button to contine:')
