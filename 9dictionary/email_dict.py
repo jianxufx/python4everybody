@@ -51,3 +51,18 @@ for line in filehandle:
 
 
 print(email_dict)
+
+
+
+print('-'*20)
+
+#we add code here to find out who send the most messages
+
+max=0
+emailname=''
+for key,value in email_dict.items():
+    if value>=max:
+        max=value
+        emailname=key
+
+print(emailname,max)
