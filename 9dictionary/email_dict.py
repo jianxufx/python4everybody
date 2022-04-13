@@ -58,11 +58,16 @@ print('-'*20)
 
 #we add code here to find out who send the most messages
 
+#we assume the max value to tbe 0
 max=0
 emailname=''
 for key,value in email_dict.items():
-    if value>=max:
-        max=value
-        emailname=key
 
+    #if the value is greater than max
+    #we get the current max value and its key
+    if value>=max:
+    max=value
+    emailname=key
+
+#after the loop we got the max value and its corresponding key
 print(emailname,max)
