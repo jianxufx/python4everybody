@@ -37,24 +37,19 @@ for line in filehandle:
 #but list have the sort method
 #we need to build a sorted list
 
-'''
-#build the alphabet list
-keys=[]
+li=[]
+for i,k in words.items():
+    #store each item in tuple
+    li.append((i,k))
 
-for key in words.keys():
-    keys.append(key)
+li.sort()
 
-keys.sort()
-
-#print the alphabet dict
-
-for name in keys:
-    print(name,words[name])
+for m,n in li:
+    print(m,n)
 
 
-print('*'*20)
-'''
 
+print('-'*30)
 #*****************************************************************
 
 #how to print the most used word by decrentment
@@ -65,31 +60,16 @@ print('*'*20)
 # can anyone help me ?
 #*****************************************************************
 
-
-# another method to build the alphabet result
-#we use tuple to the pair
-li=[]
-for i,k in words.items():
-    li.append((i,k))
-
-li.sort()
-
-for m,n in li:
-    print(m,n)
-
-
-print('-'*30)
-
-
-
 #print the dict ranked by value
 
-livalue=[]
+liitems=[]
 
 for i,k in words.items():
-    livalue.append((k,i))
 
-livalue.sort(reverse=True)
+    #store each item in tuple
+    liitems.append((k,i))
 
-for m,n in livalue:
+liitems.sort(reverse=True)
+
+for m,n in liitems:
     print(n,m)

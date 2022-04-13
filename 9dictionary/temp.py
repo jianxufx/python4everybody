@@ -1,4 +1,18 @@
-dict_test = { 'chuck' : 1 , 'annie' : 42, 'jan': 100}
+a={'of':3,'is':8,'was':5,'the':1}
+
+for key,value in a.items():
+    print(key,value)
 
 
-print(dict_test[0])
+print('-'*20)
+
+li=[]
+
+for key,value in a.items():
+    li.append((value,key))
+
+li.sort(reverse=True)
+
+
+for i,k in li:
+    print(i,k)
