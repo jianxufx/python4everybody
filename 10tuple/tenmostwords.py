@@ -27,8 +27,7 @@ for line in filehandle:
     map_delte =line.maketrans('','',word_special)
     line=line.translate(map_delte)
 
-    #lower
-
+    #capital letter will be treated  as the lower letter
     line=line.lower()
 
     #split a line into a list of words
