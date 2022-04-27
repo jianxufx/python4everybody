@@ -1,16 +1,17 @@
-import socket
-import re
+'''
+https://assignmentsbag.com/assignments-for-class-12-english/
+'''
 
+import socket
 
 mysock=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-mysock.connect(('piketty.pse.ens.fr',80))
+mysock.connect(('assignmentsbag.com',443))
 
-cmd='GET http://piketty.pse.ens.fr/files/0-19-928688-4_chap00.pdf HTTP/1.0\r\n\r\n'.encode()
+cmd='GET https://assignmentsbag.com/assignments-for-class-12-english/ HTTP/1.0\r\n\r\n'.encode()
 mysock.send(cmd)
 
 
-filehandle =open('0-19-928688-4_chap00.pdf','wb+')
-
+filehandle =open('testdrive.htm','wb+')
 
 #find header
 header=mysock.recv(512)
