@@ -1,7 +1,8 @@
 import urllib.request
 import ssl
 import re
-
+import time
+import os
 
 #no ssl certifaction alert
 ctx = ssl.create_default_context()
@@ -9,8 +10,11 @@ ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
 
 
+url=input('please type the webpage :\n')
+
+
 #get all the google drive link
-htm=urllib.request.urlopen('https://assignmentsbag.com/assignments-for-class-12-english/',context=ctx).read().decode()
+htm=urllib.request.urlopen(url,context=ctx).read().decode()
 #urlopen是同步操作，直到完成请求才会执行后面的代码
 
 #get link list
@@ -42,4 +46,32 @@ for i in range(len(urllist)):
     link_dict[filename[i]]=urllist[i]
 
 
-print(link_dict)
+
+#downaload
+
+folder='mydownload_3.1415926'
+
+try:
+    os.makedir(folder)
+except:
+    print('folder exist')
+    pass
+
+#set current working dictory
+currentpath=os.chdir(os.getcwd()+'\\'+folder+'\\')
+
+
+for filename,url in link_dict.items():
+    print(filename,'start to download!\n')
+
+    data=urllib.request.urlopen(url,context=ctx).read()
+
+    time.sleep(5)
+
+    path=filename+'.pdf'
+
+    hfile=open(path,'wb')
+    hfile.write(data)
+    hfile.close()
+
+    print(filename,'downloading compeleted!\n')
