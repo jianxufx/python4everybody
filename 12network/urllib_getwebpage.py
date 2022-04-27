@@ -1,3 +1,5 @@
+#Python 3.8.10
+#windows 7
 import urllib.request
 import ssl
 import re
@@ -42,6 +44,7 @@ myunescape_decode(filename)
 
 link_dict=dict()
 
+#build the dictionary
 for i in range(len(urllist)):
     link_dict[filename[i]]=urllist[i]
 
@@ -75,3 +78,5 @@ for filename,url in link_dict.items():
     hfile.close()
 
     print(filename,'downloading compeleted!\n')
+
+print('mission compeleted!')
